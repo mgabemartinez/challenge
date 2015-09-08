@@ -1,0 +1,136 @@
+// Main Body
+body
+  height: 100vh
+  background: #F7F7F7
+  font-family: 'Montserrat', sans-serif
+  border: 2px solid white
+
+
+// List Table 
+.list-group
+  max-width: 600px
+  padding: 0
+  margin: 4% 
+  -webkit-box-shadow: 3px 5px 3px -3px rgba(0,0,0,0.04)
+  -moz-box-shadow: 3px 5px 3px -3px rgba(0,0,0,0.04)
+  box-shadow: 3px 5px 3px -3px rgba(0,0,0,0.04)
+
+// Individual List Items
+.list-group-item 
+  position: relative
+  overflow: hidden
+  background-color: #fff
+  max-height: 58px
+  padding: 2px
+
+  &:first-child
+    border-top-left-radius: 7px
+    border-top-right-radius: 7px
+
+  &:last-child
+    border-bottom-left-radius: 7px
+    border-bottom-right-radius: 7px
+
+  &:hover
+    cursor: pointer
+    background-color: #FCFCFC
+    z-index: 10000
+
+    .fa-arrows-v
+      visibility: visible
+      
+    .list-icon
+      visibility: hidden
+     
+
+    // Hover Gradient
+    &:after 
+      content: ""
+      pointer-events: none
+      position: absolute
+      width: 200px
+      height: 100%
+      top: 0 
+      right: 0
+      background: rgba(255,252,255,0)
+      background: -moz-linear-gradient(left, rgba(255,252,255,0) 0%, rgba(255,255,255,0.59) 46%, rgba(255,255,255,0.65) 51%, rgba(255,255,255,0.73) 57%, rgba(255,255,255,0.82) 63%, rgba(255,255,255,1) 76%, rgba(252,252,252,1) 100%)
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,252,255,0)), color-stop(46%, rgba(255,255,255,0.59)), color-stop(51%, rgba(255,255,255,0.65)), color-stop(57%, rgba(255,255,255,0.73)), color-stop(63%, rgba(255,255,255,0.82)), color-stop(76%, rgba(255,255,255,1)), color-stop(100%, rgba(252,252,252,1)))
+      background: -webkit-linear-gradient(left, rgba(255,252,255,0) 0%, rgba(255,255,255,0.59) 46%, rgba(255,255,255,0.65) 51%, rgba(255,255,255,0.73) 57%, rgba(255,255,255,0.82) 63%, rgba(255,255,255,1) 76%, rgba(252,252,252,1) 100%)
+      background: -o-linear-gradient(left, rgba(255,252,255,0) 0%, rgba(255,255,255,0.59) 46%, rgba(255,255,255,0.65) 51%, rgba(255,255,255,0.73) 57%, rgba(255,255,255,0.82) 63%, rgba(255,255,255,1) 76%, rgba(252,252,252,1) 100%)
+      background: -ms-linear-gradient(left, rgba(255,252,255,0) 0%, rgba(255,255,255,0.59) 46%, rgba(255,255,255,0.65) 51%, rgba(255,255,255,0.73) 57%, rgba(255,255,255,0.82) 63%, rgba(255,255,255,1) 76%, rgba(252,252,252,1) 100%)
+      background: linear-gradient(to right, rgba(255,252,255,0) 0%, rgba(255,255,255,0.59) 46%, rgba(255,255,255,0.65) 51%, rgba(255,255,255,0.73) 57%, rgba(255,255,255,0.82) 63%, rgba(255,255,255,1) 76%, rgba(252,252,252,1) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcff', endColorstr='#fcfcfc', GradientType=1 )
+
+  &:after 
+    content: ""
+    pointer-events: none
+    position: absolute
+    width: 160px
+    height: 100%
+    top: 0 
+    right: 0
+    
+    // Fade Text Gradient
+    background-image: rgba(255,252,255,0)
+    background-image: -moz-linear-gradient(left, rgba(255,252,255,0) 0%, rgba(255,255,255,0.63) 46%, rgba(255,255,255,0.7) 51%, rgba(255,255,255,0.77) 57%, rgba(255,255,255,0.84) 63%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%)
+    background-image: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,252,255,0)), color-stop(46%, rgba(255,255,255,0.63)), color-stop(51%, rgba(255,255,255,0.7)), color-stop(57%, rgba(255,255,255,0.77)), color-stop(63%, rgba(255,255,255,0.84)), color-stop(76%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)))
+    background-image: -webkit-linear-gradient(left, rgba(255,252,255,0) 0%, rgba(255,255,255,0.63) 46%, rgba(255,255,255,0.7) 51%, rgba(255,255,255,0.77) 57%, rgba(255,255,255,0.84) 63%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%)
+    background-image: -o-linear-gradient(left, rgba(255,252,255,0) 0%, rgba(255,255,255,0.63) 46%, rgba(255,255,255,0.7) 51%, rgba(255,255,255,0.77) 57%, rgba(255,255,255,0.84) 63%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%)
+    background-image: -ms-linear-gradient(left, rgba(255,252,255,0) 0%, rgba(255,255,255,0.63) 46%, rgba(255,255,255,0.7) 51%, rgba(255,255,255,0.77) 57%, rgba(255,255,255,0.84) 63%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%)
+    background-image: linear-gradient(to right, rgba(255,252,255,0) 0%, rgba(255,255,255,0.63) 46%, rgba(255,255,255,0.7) 51%, rgba(255,255,255,0.77) 57%, rgba(255,255,255,0.84) 63%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcff', endColorstr='#ffffff', GradientType=1 )
+    
+// Green Icons
+.list-icon
+  height: 100%
+  padding: 5px
+  margin-right: -1px
+
+// Movie List Item Arrow
+.fa-arrows-v
+  position: absolute
+  left: 22px
+  top: 14px
+  padding: 0
+  heigh: 100%
+  font-size: 1.8em
+  color: #DBDBDB
+  vertical-align: center
+  margin-right: 3px
+  visibility: hidden
+  
+// Action Popover
+.action
+  position: absolute
+  top: 0px
+  right: -9px
+  min-width: 50px
+  height: 100%
+  float: right
+  padding-bottom: 2px
+  z-index: 100
+
+  &:hover
+    cursor: pointer
+    z-index: 101
+    background-color: white
+    background-image: rgba(255,255,255,0)
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(246,246,246,0.81) 51%, rgba(248,248,248,1) 63%, rgba(251,251,251,1) 79%, rgba(250,250,250,1) 100%)
+    background-image: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(51%, rgba(246,246,246,0.81)), color-stop(63%, rgba(248,248,248,1)), color-stop(79%, rgba(251,251,251,1)), color-stop(100%, rgba(250,250,250,1)))
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(246,246,246,0.81) 51%, rgba(248,248,248,1) 63%, rgba(251,251,251,1) 79%, rgba(250,250,250,1) 100%)
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(246,246,246,0.81) 51%, rgba(248,248,248,1) 63%, rgba(251,251,251,1) 79%, rgba(250,250,250,1) 100%)
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(246,246,246,0.81) 51%, rgba(248,248,248,1) 63%, rgba(251,251,251,1) 79%, rgba(250,250,250,1) 100%)
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(246,246,246,0.81) 51%, rgba(248,248,248,1) 63%, rgba(251,251,251,1) 79%, rgba(250,250,250,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 )
+
+.popover
+  border: 1px solid #EBEBEB
+  -webkit-box-shadow: none
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .04)
+
+.popover.right > .arrow
+  border-right-color: #EBEBEB
+  border-right-color: rgba(0, 0, 0, .05)
+  border-left-width: 0
+
+
